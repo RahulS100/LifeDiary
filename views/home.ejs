@@ -1,0 +1,19 @@
+<!--footer inclusion-->
+<%-include('partials/header')-%>
+<div class="home-heading-container">
+  <h1 class="home-heading">Home</h1>
+  <p class="home-subheading"><%= homePageLines %></p>
+</div>
+<% posts_Send.forEach(postData => { %>
+<div class="posts">
+  <h3 class="title"><%= postData.postTitle %></h3>
+  <p class="content"><%= postData.post.substring(0, 101) + ' ...'; %> 
+  <form action="/posts" method="get" class="post-id-send">
+    <button class="post-id-btn" type="submit" name="postId" value="<%= postData._id %>">Read More</button>
+</form>
+</p>
+</div>
+<% }); %>
+
+<!--header inclusion-->
+<%-include('partials/footer')-%>

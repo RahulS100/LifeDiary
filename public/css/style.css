@@ -1,0 +1,182 @@
+/*-------------------------------font embbed-----------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Georama:wght@600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+/*---------------------------------reset--------------------------------*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --main-font: "Georama", sans-serif;
+  --post-font: 'Inter', sans-serif;
+  --main-color:#d1e8e4;
+}
+
+/*------------------------------Navbar----------------------------------*/
+.navbar {
+  background-color: var(--main-color);
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0.5px 0.5px 5px -1px rgba(0, 0, 0, 0.4);
+}
+
+.navlink {
+  text-decoration: none;
+  color: #212121;
+  font-family: sans-serif;
+  font-size: 1.1rem;
+  font-family: var(--main-font);
+}
+
+.navbar-items {
+  list-style-type: none;
+  display: flex;
+}
+
+.item {
+  margin-right: 30px;
+}
+
+.brand-nav {
+  font-weight: bold;
+  font-family: sans-serif;
+  color: #212121;
+  font-size: 1.5rem;
+  padding: 10px;
+  font-family: var(--main-font);
+}
+
+/*------------------------------Home Heading----------------------------------*/
+.home-heading-container {
+  padding: 30px 40px 30px 40px;
+}
+
+.home-heading {
+  font-size: 2rem;
+  font-family: var(--main-font);
+}
+
+.home-subheading {
+  font-size: 1.1rem;
+  font-family: var(--post-font);
+}
+
+/*-----------------------------------compose section----------------------------*/
+.shared-input-prop {
+  width: 900px;
+  display: block;
+  padding: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  outline: none;
+  margin: 10px 0 10px 0;
+}
+
+.title-input {
+  padding: 10px;
+  width: 890px;
+  font-family: var(--main-font);
+}
+
+.post-input {
+  resize: none;
+}
+
+.post-btn {
+  outline: none;
+  border: none;
+  height: 40px;
+  width: 120px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: black;
+  margin: 5px 0 0 790px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.1);
+  font-family: var(--main-font);
+}
+
+::placeholder {
+  font-weight: bold;
+}
+
+/*------------------------------Posts----------------------------------*/
+.posts {
+    padding: 30px 40px 30px 40px;
+}
+
+.title {
+    font-family: var(--main-font);
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.content {
+  font-family: var(--post-font);
+  display: inline-block;
+}
+
+
+/* .read-more-link {
+  text-decoration: none;
+  font-weight: bold;
+  font-family: var(--main-font);
+  color: rgba(124, 218, 235);
+}
+
+.read-more-link:visited {
+  color: rgba(124, 218, 235, 0.4);
+} */
+
+/*---post id sending form and btn---*/
+.post-id-btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 5px;
+  font-size: 1rem;
+  color: blue;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: var(--post-font);
+}
+
+.post-id-send{
+  display: inline-block;
+}
+
+.del-post-btn {
+  padding: 8px;
+  margin-top: 30px;
+  outline: none;
+  color: rgba(255, 0, 0, 0.7);
+  font-weight: bold;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.del-post-btn:hover {
+  color: red;
+}
+
+/*------------------------------footer----------------------------------*/
+.footer {
+  background-color: var(--main-color);
+  text-align: center;
+  height: 60px;
+  margin-top: 20px;
+}
+
+.footer-heading {
+  padding-top: 20px;
+  font-family: var(--main-font);
+  font-weight: 300;
+  font-size: 1rem;
+}
