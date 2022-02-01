@@ -114,6 +114,7 @@ BlogApp.post('/deletepost', (req, res) => {
 });
 
 //-------------------------------Server PORT Stuff------------------
-BlogApp.listen(5000, () => {
-  console.log("Server Running at port 5000");
+const PORT = process.env.PORT || 3000
+BlogApp.listen(, () => {
+  console.log(`Server Up on ${PORT}`);
 });
